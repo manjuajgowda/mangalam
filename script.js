@@ -1,3 +1,28 @@
+const header = document.querySelector(".top-header");
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+
+  const currentScroll =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > window.innerHeight) {
+
+    if (currentScroll > lastScrollTop) {
+      header.classList.add("show-header");
+    }
+    else {
+      header.classList.remove("show-header");
+    }
+  } else {
+    header.classList.remove("show-header");
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
+});
+
 fetch("./Sections/homepage.html")
 	.then(response => response.text())
 	.then(data => {
