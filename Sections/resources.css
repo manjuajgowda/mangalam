@@ -1,0 +1,165 @@
+.resources-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.resources-container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.resources-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resources-heading h2 {
+  font-size: 44px;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.resources-heading p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.download-box {
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 22px;
+  padding: 18px 28px;
+}
+
+.download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 24px 0;
+}
+
+.download-item:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.download-item h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #111;
+  font-weight: 500;
+}
+
+.download-item button {
+  border: none;
+  background: transparent;
+  color: #2b3990;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.download-item button:hover {
+  opacity: 0.8;
+}
+
+.download-item button i {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .resources-container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .resources-container {
+    padding: 0 60px;
+  }
+
+  .resources-heading h2 {
+    font-size: 52px;
+  }
+
+  .download-item h3 {
+    font-size: 24px;
+  }
+
+  .download-item button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .resources-container {
+    padding: 0 18px;
+  }
+
+  .resources-heading h2 {
+    font-size: 42px;
+  }
+
+  .resources-heading p {
+    font-size: 16px;
+  }
+
+  .download-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+  .resources-section {
+    padding: 70px 0;
+  }
+
+  .resources-container {
+    padding: 0 16px;
+  }
+
+  .resources-heading {
+    margin-bottom: 40px;
+  }
+
+  .resources-heading h2 {
+    font-size: 32px;
+  }
+
+  .resources-heading p {
+    font-size: 14px;
+  }
+
+  .download-box {
+    padding: 16px 18px;
+    border-radius: 18px;
+  }
+
+  .download-item {
+    padding: 18px 0;
+  }
+
+  .download-item h3 {
+    font-size: 18px;
+  }
+
+  .download-item button {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .download-item button i {
+    font-size: 16px;
+  }
+}

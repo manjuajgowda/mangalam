@@ -1,0 +1,295 @@
+.portfolio-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.portfolio-container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.portfolio-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-heading h2 {
+  font-size: 44px;
+  line-height: 1.2;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.portfolio-heading p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.portfolio-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 22px;
+  padding: 24px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-card h3 {
+  font-size: 28px;
+  line-height: 1.3;
+  color: #111;
+  margin-bottom: 18px;
+}
+
+.portfolio-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 26px;
+  flex-grow: 1;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.portfolio-card button {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  background: white;
+  color: #2b3990;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.portfolio-card button:hover {
+  background: #2b3990;
+  color: white;
+}
+
+.portfolio-cta {
+  margin-top: 60px;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: #fafafa;
+}
+
+.portfolio-cta-content h3 {
+  font-size: 26px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.portfolio-cta-content span {
+  color: #2b3990;
+}
+
+.portfolio-cta-content p {
+  color: #666;
+  font-size: 16px;
+}
+
+.expert-btn {
+  background: #2b3990;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expert-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .portfolio-container {
+    padding: 0 60px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 48px;
+  }
+
+  .portfolio-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio-container {
+    padding: 0 18px;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 40px;
+  }
+
+  .portfolio-heading p {
+    font-size: 16px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+
+  .portfolio-section {
+    padding: 70px 0;
+  }
+
+  .portfolio-container {
+    padding: 0 16px;
+  }
+
+  .portfolio-heading {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 30px;
+  }
+
+  .portfolio-heading p {
+    font-size: 14px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-card p {
+    font-size: 14px;
+  }
+
+  .portfolio-card img {
+    height: 160px;
+  }
+
+  .portfolio-cta {
+    padding: 22px;
+    margin-top: 40px;
+  }
+
+  .portfolio-cta-content h3 {
+    font-size: 26px;
+  }
+
+  .portfolio-cta-content p {
+    font-size: 13px;
+  }
+
+  .expert-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 360px) {
+  .portfolio-section {
+    padding: 70px 0;
+  }
+
+  .portfolio-container {
+    padding: 0 16px;
+  }
+
+  .portfolio-heading {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 30px;
+  }
+
+  .portfolio-heading p {
+    font-size: 14px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-card p {
+    font-size: 14px;
+  }
+
+  .portfolio-card img {
+    height: 160px;
+  }
+
+  .portfolio-cta {
+    padding: 22px;
+    margin-top: 40px;
+  }
+
+  .portfolio-cta-content h3 {
+    font-size: 26px;
+  }
+
+  .portfolio-cta-content p {
+    font-size: 13px;
+  }
+
+  .expert-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

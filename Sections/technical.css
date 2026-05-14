@@ -1,0 +1,149 @@
+.technical-section {
+  background: #071126;
+  padding: 70px 0;
+}
+
+.technical-container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.technical-container h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.technical-subtitle {
+  color: #b8c0cf;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.technical-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+
+.technical-table thead {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.technical-table th {
+  text-align: left;
+  padding: 18px 22px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.technical-table td {
+  padding: 22px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.technical-table tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.datasheet-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.datasheet-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.datasheet-btn:hover {
+  background: white;
+  color: #071126;
+}
+
+
+@media (max-width: 1200px) {
+  .technical-container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .technical-container {
+    padding: 0 60px;
+  }
+
+  .technical-container h2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 800px) {
+  .technical-container {
+    padding: 0 18px;
+  }
+
+  .technical-container h2 {
+    font-size: 38px;
+  }
+
+  .technical-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .technical-section {
+    padding: 70px 0;
+  }
+
+  .technical-container {
+    padding: 0 16px;
+  }
+
+  .technical-container h2 {
+    font-size: 28px;
+  }
+
+  .technical-subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .technical-table th,
+  .technical-table td {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .datasheet-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
